@@ -1,0 +1,45 @@
+.portal {
+  background: linear-gradient(
+    180deg,
+    rgba(135, 201, 202, 0.5) 13.56%,
+    rgba(225, 254, 255, 0.5) 85.62%
+  );
+}
+
+.portal button {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  color: #5d5b5bb2;
+  width: 15rem;
+  height: 3.3rem;
+}
+
+#clicked {
+  border: 3px solid #ff8a00;
+  color: #ff8a00;
+}
+
+.portalHead {
+  box-shadow: 0px 0px 4px 0px #00000040;
+  color: #416C88;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portalImage {
+    display: flex;
+    align-items: center;
+}
+
+.portalImage img {
+    filter: grayscale(80%);
+    height: 7rem;
+}
+
+#pimg {
+    filter: grayscale(0);
+    height: 27rem;
+}

@@ -1,0 +1,19 @@
+.card {
+    border: 2px solid #0000001A;
+    border-radius: 1.3rem;
+    padding: 1rem;
+    width: 21.4rem;
+    height: 10.35rem;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+      width: 9.8rem;
+      height: 9.6rem;
+      padding: 2rem 0rem;
+    }
+    .card p {
+        display: none;
+    }
+  }
+  

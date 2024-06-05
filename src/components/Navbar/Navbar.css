@@ -1,0 +1,70 @@
+.navbar {
+  width: 100%;
+  height: 5.2rem;
+  background-color: #d9d9d9;
+  background: linear-gradient(
+    30.12deg,
+    #ffffff 18.36%,
+    #aad9d4 106.51%,
+    #80a5a1 202.85%
+  );
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1rem;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 15;
+}
+
+.toggle {
+  display: none;
+  position: absolute;
+  transform: translateX(5000px);
+}
+
+.toggle img {
+  height: 1.5rem;
+}
+
+.hiddenNav {
+  position: absolute;
+  height: 40vh;
+  width: 100vw;
+  top: 5.2rem;
+  left: 0;
+  background: linear-gradient(
+    30.12deg,
+    #ffffff 18.36%,
+    #aad9d4 106.51%,
+    #80a5a1 202.85%
+  );
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 2rem 3rem;
+    position: static;
+  }
+  .navItem,
+  .navbar button:nth-child(2) {
+    display: none;
+    position: absolute;
+    transform: translateX(-2000px);
+  }
+  .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    transform: translateX(0);
+  }
+}

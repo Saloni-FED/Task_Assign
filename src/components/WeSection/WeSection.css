@@ -1,0 +1,36 @@
+.we > div:nth-child(2) {
+  background: linear-gradient(
+    180deg,
+    rgba(232, 212, 183, 0.5) 0%,
+    rgba(255, 225, 200, 0.5) 100%
+  );
+  border-radius: 1rem;
+}
+
+.community {
+  background: linear-gradient(180deg, #3c6580 0%, #5891b5 100%);
+  border-radius: 1.25rem;
+}
+
+.vinay {
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    position: absolute;
+    right: 13.5rem;
+    top: 139.5rem;
+}
+
+.weCarousel img {
+    height: 157px;
+}
+
+@media screen and (max-width: 480px) {
+    .vinay {
+        position: static;
+        height: 12rem;
+        width: 12rem;
+    }
+    .swiper {
+        width: 17rem;
+    }
+}

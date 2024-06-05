@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100vw;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.2rem;
+  height: 3rem;
+  border-radius: 5rem;
+  color:#303030;
+}
+
+h1, h2, h3 {
+  font-family: "Literata", serif;
+}
+
+.swiper {
+  width: 58rem;
+  height: 250px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+
+/* 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900 */
+
+/* .literata-<uniquifier> {
+  font-family: "Literata", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */

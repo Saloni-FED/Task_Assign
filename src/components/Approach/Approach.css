@@ -1,0 +1,28 @@
+.apprCard > div {
+  background: linear-gradient(270deg, #f0faef 0%, #ededed 100%);
+  width: 26rem;
+  height: 13rem;
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.apprCard {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-image: url("../../assets/images/Vector\ 15.png");
+  background-repeat: no-repeat;
+  background-position-y: 7rem;
+  background-position-x: 23rem;
+  color: #1d3557;
+}
+
+@media screen and (max-width: 480px) {
+  .apprCard > div {
+    width: 19rem;
+    height: 7.5rem;
+  }
+}
