@@ -38,7 +38,7 @@ const Pnp = () => {
           <p>Flexible Support</p>
         </div>
       </div>
-      <div className="md:w-full w-[360px] flex justify-evenly md:flex-row flex-col flex-wrap gap-4 md:h-[870.40px] h-[679.36px] overflow-x-auto">
+      <div className="md:w-full w-[360px] flex justify-evenly md:flex-row flex-col flex-wrap gap-4 md:h-[870.40px] h-[679.36px] overflow-x-scroll md:over-x-hidden overflow-y-hidden">
         <div className="pnpCard md:w-[25%] w-full  p-8 flex flex-col justify-start items-center gap-6 h-full">
           <div>
             <h2 className=" font-bold text-[2rem] text-center">Neev</h2>

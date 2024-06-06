@@ -12,6 +12,7 @@ import "swiper/css/effect-fade";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Slider from "react-slick";
 
 import {
   Autoplay,
@@ -30,6 +31,18 @@ const WeSection = () => {
     console.log(isMobile);
   }, [isMobile]);
 
+  // Slider
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = 3;
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
+  };
+
   return (
     <div className="we w-full h-full flex flex-col md:gap-32 gap-16 pt-8 justify-center items-center">
       <div className=" w-[70%] flex justify-center items-center flex-col gap-4">
@@ -47,26 +60,69 @@ const WeSection = () => {
           suite of tools at no cost.
         </p>
       </div>
-      <div className="w-[85%] py-6 md:px-8 px-4 flex flex-col items-center gap-8">
-        <h2 className=" font-semibold md:text-[2rem] text-[1.25rem]">
-          Hear directly from
-          <span className="text-[#FF8A00]">our community</span>
-        </h2>
-        <div className="community flex justify-between md:flex-row flex-col-reverse text-white p-8 md:w-[70%] w-[100%] gap-4">
-          <div className="flex flex-col gap-2 items-start md:w-[80%] w-full">
-            <p className=" text-[1rem]">
-              Since using MPower, our donor retention surged by 90%, thanks to
-              automated onboarding and personalized communications. It’s
-              dramatically saved us time, refocusing us on our mission. Gaurav
-              and Geetika provided seamless integration and extended our team's
-              capabilities.
-            </p>
-            <p className=" text-[1.125rem] font-bold">Vinay</p>
-            <p className=" text-[1.125rem]">Donor(USA)</p>
+
+      <div className="sm:w-[1229px] w-full mx-auto px-8 py-4 relative overflow-hidden  ">
+        <div className="sm:flex sm:justify-between">
+          <h1 className="font-semibold text-2xl text-[#0B4993]">
+            Hear directly from{" "}
+            <span className="text-[#FF8A00]">our community</span>
+          </h1>
+          <h2 className="">{" < > "}</h2>
+        </div>
+         
+        {/* Cards Carousel */} 
+        <div className="sm:h-[235.34px] mt-3 sm:w-fit w-full flex max-sm:flex-wrap gap-7 border overflow-x-hidden scroll-smooth ">
+          <div className="sm:w-[700.29px] sm:h-full border-5 border-red-500 bg-gradient-to-br from-[#5891B5] to-[#3C6580] rounded-3xl box-border w-full ">
+            <div
+              id="content"
+              className="sm:w-[565px] text-[16px] text-white px-10 py-7 "
+            >
+              <p className="font-[400px] leading-6">
+                Since using MPower, our donor retention surged by 90%, thanks to
+                automated onboarding and personalized communications. It’s
+                dramatically saved us time, refocusing us on our mission. Gaurav
+                and Geetika provided seamless integration and extended our
+                team's capabilities.
+              </p>
+              <p className="sm:mt-3 mt-28">Vinay</p>
+              <p>(Donor USA)</p>
+            </div>
+            <div className="w-fit h-fit rounded-full sm:border mt-0 z-10 absolute max-md:top-[23rem] max-md:left-[13rem]  border-4  md:left-[37rem] md:top-[56.33px]">
+              <img
+                src={vinay}
+                alt=""
+                className="rounded-full max-sm:h-40 max-sm:w-40"
+              />
+            </div>
           </div>
-          <img className="vinay" src={vinay} alt="vinay" />
+
+          {/* Card 2 */}
+          <div className="sm:ml-32 sm:w-[700.29px] sm:h-full border-5 border-red-500 bg-gradient-to-br from-[#5891B5] to-[#3C6580] rounded-3xl box-border w-full">
+            <div
+              id="content"
+              className="sm:w-[565px] text-[16px] text-white px-10 py-7 "
+            >
+              <p className="font-[400px] leading-6">
+                Since using MPower, our donor retention surged by 90%, thanks to
+                automated onboarding and personalized communications. It’s
+                dramatically saved us time, refocusing us on our mission. Gaurav
+                and Geetika provided seamless integration and extended our
+                team's capabilities.
+              </p>
+              <p className="sm:mt-3 mt-28">Vinay</p>
+              <p>(Donor USA)</p>
+            </div>
+            <div className="w-fit h-fit rounded-full sm:border mt-0 z-10 absolute top-[23rem] left-[13rem] border-4  sm:left-[37rem] sm:top-[56.33px]">
+              <img
+                src={vinay}
+                alt=""
+                className="rounded-full max-sm:h-40 max-sm:w-40"
+              />
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="flex flex-col items-center gap-8">
         <h2 className="font-semibold text-[2rem]">
           Latest <span className="text-[#FF8A00]">fundings</span>
