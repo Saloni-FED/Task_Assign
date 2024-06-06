@@ -4,7 +4,7 @@ import tick from "../../assets/images/Group 152.png";
 
 const Pnp = () => {
   return (
-    <div className="pnp flex flex-col items-center justify-center gap-10">
+    <div className="pnp pd flex flex-col items-center justify-center gap-10 box-border">
       <h2 className=" font-bold text-[2rem]">
         mpower <span className="text-[#FF8A00]">plan and Pricing</span>
       </h2>
@@ -38,8 +38,8 @@ const Pnp = () => {
           <p>Flexible Support</p>
         </div>
       </div>
-      <div className="w-full flex justify-evenly md:flex-row flex-col gap-4">
-        <div className="pnpCard md:w-[25%] w-full h-[90vh] p-8 flex flex-col justify-start items-center gap-6">
+      <div className="md:w-full w-[360px] flex justify-evenly md:flex-row flex-col flex-wrap gap-4 md:h-[870.40px] h-[679.36px] overflow-x-auto">
+        <div className="pnpCard md:w-[25%] w-full  p-8 flex flex-col justify-start items-center gap-6 h-full">
           <div>
             <h2 className=" font-bold text-[2rem] text-center">Neev</h2>
             <p className=" text-xl text-center">Automate & Digitize</p>
@@ -51,8 +51,8 @@ const Pnp = () => {
             </div>
           </div>
           <div className="flex flex-col gap-12">
-            <h1 className=" font-bold text-[3rem] text-center">Free</h1>
-            <ul className="list-disc ul flex flex-col gap-2">
+            <h1 className=" font-bold text-4xl text-center">Free</h1>
+            <ul className="list-disc ul flex flex-col gap-4 text-xl">
               <li>Manage Donors & Donations</li>
               <li>Generate Instant Receipts</li>
               <li>Manage Beneficiaries</li>
@@ -61,7 +61,8 @@ const Pnp = () => {
             </ul>
           </div>
         </div>
-        <div className="pnpCard md:w-[25%] w-full h-[90vh] p-8 flex flex-col justify-start items-center gap-6">
+        {/* Card 2 */}
+        <div className="pnpCard md:w-[25%] w-full h-full p-8 flex flex-col justify-start items-center gap-6">
           <div>
             <h2 className=" font-bold text-[2rem] text-center">Pragati</h2>
             <p className=" text-xl text-center">Foster Donor Relationships</p>
@@ -74,12 +75,12 @@ const Pnp = () => {
           </div>
           <div className="flex flex-col gap-12 w-full">
             <div className=" w-full">
-              <h1 className=" font-bold text-[3rem] text-center">₹999/month</h1>
+              <h1 className=" font-bold text-4xl text-center">₹999/month</h1>
               <div className="text-[#457B9D] text-[1.5rem] text-center">
                 +1 month free
               </div>
             </div>
-            <ul className="list-disc ul flex flex-col gap-2 ">
+            <ul className="list-disc ul flex flex-col gap-4 text-xl">
               <li>Get All Features of Neev</li>
               <li>Send Thank You Cards on WhatsApp for each donation</li>
               <li>Email Receipts Instantly</li>
@@ -90,9 +91,10 @@ const Pnp = () => {
             </ul>
           </div>
         </div>
-        <div className=" md:w-[25%] w-full ">
+        {/* Card Three */}
+        <div className=" md:w-[25%] md:h-[870.40px] h-[679.36px] md:-mt-6">
           <div className="flex flex-col justify-center items-center bg-[#3CA4B7] text-white h-8">Popular, One Stop Solution</div>
-          <div className="pnpCard h-[86vh] w-full p-8 flex flex-col justify-start items-center gap-6">
+          <div className="pnpCard h-full w-full p-8 flex flex-col justify-start items-center gap-6">
             <div className=" w-full">
               <h2 className=" font-bold text-[2rem] text-center">Udaan</h2>
               <p className=" text-xl text-center">Fundraise</p>
@@ -105,14 +107,14 @@ const Pnp = () => {
             </div>
             <div className="flex flex-col gap-12 w-full">
               <div>
-                <h1 className=" font-bold text-[3rem] text-center">
+                <h1 className=" font-bold text-4xl text-center ">
                   ₹1999/month
                 </h1>
                 <div className="text-[#457B9D] text-[1.5rem] text-center">
                   +1 month free
                 </div>
               </div>
-              <ul className="list-disc ul flex flex-col gap-2">
+              <ul className="list-disc ul flex flex-col gap-4 text-xl">
                 <li>All Features of Neev & Pragati</li>
                 <li>Full Fundraising Suite</li>
                 <li>Run free and paid campaigns</li>

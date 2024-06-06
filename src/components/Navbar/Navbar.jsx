@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex gap-20">
           <div className=" navItem flex gap-20">
             <Link to="/mission">Mission</Link>
-            <Link to="/mission">Plan & Pricing</Link>
+            <Link to="/pricing">Plan & Pricing</Link>
             <Link to="/mission">Our Approach</Link>
             <Link to="/mission">Team</Link>
           </div>
