@@ -1,8 +1,10 @@
 import React from "react";
 import "./Pnp.css";
 import tick from "../../assets/images/Group 152.png";
+import ResponsiveSlider from "../ResponsiveSlider/ResponsiveSlider.jsx"
 
 const Pnp = () => {
+ 
   return (
     <div className="pnp pd flex flex-col items-center justify-center gap-10 box-border">
       <h2 className=" font-bold text-[2rem]">
@@ -38,7 +40,11 @@ const Pnp = () => {
           <p>Flexible Support</p>
         </div>
       </div>
-      <div className="md:w-full w-[360px] flex justify-evenly md:flex-row flex-col flex-wrap gap-4 md:h-[870.40px] h-[679.36px] overflow-x-scroll md:over-x-hidden overflow-y-hidden no-scrollbar">
+      {/* Card */}
+      <div className="max-sm:block hidden">
+        <ResponsiveSlider/>
+      </div>
+      <div className="max-sm:hidden md:w-full w-[360px] flex justify-evenly md:flex-row flex-col flex-wrap gap-2 md:h-[870.40px] h-[679.36px] ">
         <div className="pnpCard md:w-[25%] w-full  p-8 flex flex-col justify-start items-center gap-6 h-full">
           <div>
             <h2 className=" font-bold text-[2rem] text-center">Neev</h2>
@@ -92,8 +98,10 @@ const Pnp = () => {
           </div>
         </div>
         {/* Card Three */}
-        <div className=" md:w-[25%] md:h-[870.40px] h-[679.36px] md:-mt-6">
-          <div className="flex flex-col justify-center items-center bg-[#3CA4B7] text-white h-8">Popular, One Stop Solution</div>
+        <div className=" md:w-[25%] md:h-[840px] h-[679.36px]">
+          <div className="flex flex-col justify-center items-center bg-[#3CA4B7] text-white h-8">
+            Popular, One Stop Solution
+          </div>
           <div className="pnpCard h-full w-full p-8 flex flex-col justify-start items-center gap-6">
             <div className=" w-full">
               <h2 className=" font-bold text-[2rem] text-center">Udaan</h2>
