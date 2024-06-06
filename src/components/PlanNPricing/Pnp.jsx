@@ -14,7 +14,7 @@ const Pnp = () => {
         <p className=" italic font-medium text-2xl text-[#457B9D]">
           Empowering NGOs to Succeed
         </p>
-        <p className="text-center text-2xl">
+        <p className="text-center text-2xl font-op_san text-[#303030] font-light leading-9">
           Choose from our starting at{" "}
           <span className="font-bold">₹1999/month</span>. Automate operations,
           foster donor relationships, and boost fundraising. Enjoy 45 days free
@@ -25,20 +25,17 @@ const Pnp = () => {
       <div className="hide tick flex gap-9">
         <div>
           <img src={tick} alt="tick" />
-          <p>Comprehensive Management Tools</p>
+          <p>Billed Monthly</p>
         </div>
         <div>
           <img src={tick} alt="tick" />
-          <p>Scalable User Access</p>
+          <p>30 Days Free Trial</p>
         </div>
         <div>
           <img src={tick} alt="tick" />
-          <p>Advanced Fundraising</p>
+          <p>Cancel Any Time</p>
         </div>
-        <div>
-          <img src={tick} alt="tick" />
-          <p>Flexible Support</p>
-        </div>
+        
       </div>
       {/* Card */}
       <div className="max-sm:block hidden">
