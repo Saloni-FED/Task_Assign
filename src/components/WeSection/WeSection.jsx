@@ -46,14 +46,13 @@ const WeSection = () => {
   return (
     <div className="we w-full h-full flex flex-col md:gap-32 gap-16 pt-8 justify-center items-center">
       <div className=" w-[70%] flex justify-center items-center flex-col gap-4">
-        <h2 className=" font-semibold md:text-[2rem] text-[1.25rem]">
+        <h2 className=" font-semibold md:text-[2rem] text-[1.25rem] text-[#1D3557] font-lit">
           Who are <span className="text-[#FF8A00]">we</span>?
         </h2>
-        <p className=" text-[#457B9D] font-bold md:text-[1.8rem] text-[0.9rem] text-center">
-          Like yourself, we at mpower are driven by a mission to make a
-          difference.
+        <p className=" text-[#457B9D] font-bold md:text-[1.8rem] text-[0.9rem] text-center leading-[2.2rem] italic font-op_san text-nowrap">
+          Like yourself, we at mpower are driven by a mission to make a difference.
         </p>
-        <p className="text-[#303030] md:text-[1.5rem] text-[0.8rem] text-center">
+        <p className="text-[#303030] md:text-[1.5rem] text-[0.8rem] text-center font-op_san font-normal">
           We believe in the power of non-profits and their essential role in
           society. That's why we have set out to democratize advanced
           technologies for the non-profit sector, offering our comprehensive

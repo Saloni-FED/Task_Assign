@@ -22,18 +22,22 @@ const Pnp = () => {
         </p>
         <button className="bg-[#FF8A00] text-white">Start for free</button>
       </div>
-      <div className="hide tick flex gap-9">
+      <div className="hide tick flex gap-9 font-[16px]">
         <div>
           <img src={tick} alt="tick" />
-          <p>Billed Monthly</p>
+          <p>Comprehensive Management Tools</p>
         </div>
         <div>
           <img src={tick} alt="tick" />
-          <p>30 Days Free Trial</p>
+          <p>Scalable Usr Access</p>
         </div>
         <div>
           <img src={tick} alt="tick" />
-          <p>Cancel Any Time</p>
+          <p>Advanced fundraising</p>
+        </div>
+        <div>
+          <img src={tick} alt="tick" />
+          <p>Flexible Support</p>
         </div>
         
       </div>
