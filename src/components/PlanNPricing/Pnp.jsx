@@ -22,14 +22,14 @@ const Pnp = () => {
         </p>
         <button className="bg-[#FF8A00] text-white">Start for free</button>
       </div>
-      <div className="hide tick flex gap-9 font-[16px]">
+      <div className="hide tick flex gap-4 font-[16px]">
         <div>
           <img src={tick} alt="tick" />
           <p>Comprehensive Management Tools</p>
         </div>
         <div>
           <img src={tick} alt="tick" />
-          <p>Scalable Usr Access</p>
+          <p>Scalable User Access</p>
         </div>
         <div>
           <img src={tick} alt="tick" />
@@ -144,3 +144,5 @@ const Pnp = () => {
 };
 
 export default Pnp;
+
+// del /F /S /Q /A .git
