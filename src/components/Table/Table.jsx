@@ -3,7 +3,7 @@ import { data } from "../../constant/constant";
 
 const Table = () => {
   return (
-    <div className="w-full flex-col ">
+    <div className="w-full flex-col mb-10">
       <div className="mx-auto font-bold text-[32px] leading-9 w-[78%]">
         <h3 className="">
           Complete compare <span className="text-[#FF8A00]">Feature</span>

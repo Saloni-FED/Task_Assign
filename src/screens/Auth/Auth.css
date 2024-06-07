@@ -1,0 +1,352 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.login {
+  background: linear-gradient(to bottom, #c7e9ff, #fff, #fff);
+  padding: 1rem;
+}
+
+.login_page {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_heading {
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.login_Box {
+  display: flex;
+  gap: 1.3rem;
+  background-color: #fff;
+  margin-top: 2rem;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  min-width: 25rem;
+  border: 1px solid #1d3557;
+  border-radius: 1rem;
+}
+
+.Log_label {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.Log_Input {
+  padding: 15px;
+  min-width: 18rem;
+  font-size: 12px;
+  border: 1px solid #1d3557;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.my-button {
+  min-width: 2rem;
+  padding: 15px 50px;
+  font-size: 16px;
+  background-color: #ff8a00;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.my-button:hover {
+  background-color: rgb(245, 132, 2);
+}
+
+.forget_password {
+  font-size: 12px;
+  color: #306281;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login_page {
+    padding-top: 5rem;
+  }
+
+  .login_Box {
+    padding: 1.5rem 2rem;
+    min-width: 22rem;
+  }
+
+  .Log_Input {
+    min-width: 16rem;
+    font-size: 14px;
+  }
+
+  .my-button {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login_heading {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .login_Box {
+    padding: 1rem 1.5rem;
+    min-width: 20rem;
+  }
+
+  .Log_Input {
+    min-width: 15rem;
+    font-size: 12px;
+  }
+
+  .my-button {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  .forget_password {
+    font-size: 10px;
+  }
+}
+
+/* Signup */
+.sign_page {
+  padding-top: 5rem;
+}
+.signup_heading {
+  color: #ff8a00;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid-2-uneven {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.grid-2-uneven > :first-child {
+  order: 2;
+}
+.grid-2-uneven > :nth-child(2) {
+  order: 1;
+}
+.grid-3-cols {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+.Sign_label {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.Sign_label span {
+  color: red;
+}
+.text-center {
+  width: 100%;
+  text-align: center;
+}
+.title {
+  color: hwb(203 27% 38%);
+  font-size: 25px;
+  text-align: start;
+}
+.Add_btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #457b9d;
+  color: #fff;
+}
+.flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2px;
+}
+.add_circle {
+  height: 14rem;
+  width: 14rem;
+  z-index: 0;
+  margin-top: 3rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #002a44;
+}
+.Add_Image {
+  position: relative;
+  top: 23%;
+}
+.Add_span {
+  position: relative;
+  top: -7%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #457b9d;
+  color: #fff;
+}
+
+.add_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.Log_Input_sign {
+  padding: 15px;
+  min-width: 18rem;
+  font-size: 12px;
+  border: 1px solid #1d3557;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.title-img {
+  margin-top: 3rem;
+  color: hwb(203 27% 38%);
+  font-size: 20px;
+  line-height: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+}
+.title-add {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 500px) {
+  .Add_Image {
+    position: relative;
+    top: 22%;
+  }
+  .Log_Input_sign {
+    min-width: 22rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .Log_Input_sign {
+    min-width: 20rem;
+  }
+  .Add_Image {
+    top: 23%;
+  }
+  .grid-2-uneven {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid-2-uneven > :first-child {
+    order: 2;
+  }
+  .grid-2-uneven > :nth-child(2) {
+    order: 1;
+  }
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .Add_Image {
+    top: 24%;
+  }
+  .grid-3-cols {
+    margin-top: 2rem;
+  }
+
+  .Log_Input_sign {
+    min-width: 25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-2-uneven {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid-2-uneven > :first-child {
+    order: 1;
+  }
+  .grid-2-uneven > :nth-child(2) {
+    order: 2;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .Add_Image {
+    top: 16%;
+  }
+  .Log_Input_sign {
+    min-width: 18rem;
+  }
+  .grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-2-uneven {
+    grid-template-columns: 5fr 1fr;
+  }
+  .title-img {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .Add_Image {
+    position: relative;
+    top: 15%;
+  }
+  .Log_Input_sign {
+    min-width: 20rem;
+  }
+  .grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .title-img {
+    font-size: 22px;
+  }
+}
+/*  Add user */
+.margin {
+  margin-top: 1rem;
+}
+.x_btn {
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .x_btn {
+    margin: -2px;
+  }
+}

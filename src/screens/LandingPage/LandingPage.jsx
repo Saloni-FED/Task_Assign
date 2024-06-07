@@ -6,6 +6,7 @@ import Pnp from '../../components/PlanNPricing/Pnp'
 import Approach from '../../components/Approach/Approach'
 import Portal from '../../components/Portal/Portal'
 import ModernCarousel from '../../components/ModernCarousel/ModernCarousel'
+import Founder from '../../components/Founders/Founder'
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <Pnp/>
         <Approach/>
         <Portal/>
+        <Founder/>
     </div>
   )
 }

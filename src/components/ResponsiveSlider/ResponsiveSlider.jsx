@@ -17,7 +17,7 @@ const ResponsiveSlider = () => {
       showIndicators={true}
       infiniteLoop
       autoPlay
-      interval={5000}
+      interval={3000}
       stopOnHover={false}
       emulateTouch
       swipeable
@@ -40,7 +40,7 @@ const ResponsiveSlider = () => {
         </div>
         <div className="flex flex-col gap-12">
           <h1 className="font-bold text-4xl text-center">Free</h1>
-          <ul className="list-disc ul flex flex-col gap-4 text-[10px] px-4 list-none">
+          <ul className=" ul flex flex-col gap-4 text-[20px] px-4 list-none">
             <li>Manage Donors & Donations</li>
             <li>Generate Instant Receipts</li>
             <li>Manage Beneficiaries</li>
@@ -68,7 +68,7 @@ const ResponsiveSlider = () => {
               +1 month free
             </div>
           </div>
-          <ul className="list-disc ul flex flex-col gap-4 text-[10px] px-4 list-none">
+          <ul className=" ul flex flex-col gap-4 text-[10px] px-4 list-none">
             <li>Get All Features of Neev</li>
             <li>Email Receipts Instantly</li>
             <li>Host your microsite in minutes</li>

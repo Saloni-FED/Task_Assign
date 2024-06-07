@@ -32,16 +32,7 @@ const WeSection = () => {
   }, [isMobile]);
 
   // Slider
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 3;
-
-  const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-  };
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
-  };
+  // let box = document.querySelector('#') 
 
   return (
     <div className="we w-full h-full flex flex-col md:gap-32 gap-16 pt-8 justify-center items-center">
@@ -50,7 +41,8 @@ const WeSection = () => {
           Who are <span className="text-[#FF8A00]">we</span>?
         </h2>
         <p className=" text-[#457B9D] font-bold md:text-[1.8rem] text-[0.9rem] text-center leading-[2.2rem] italic font-op_san text-nowrap">
-          Like yourself, we at mpower are driven by a mission to make a difference.
+          Like yourself, we at mpower are driven by a mission to make a
+          difference.
         </p>
         <p className="text-[#303030] md:text-[1.5rem] text-[0.8rem] text-center font-op_san font-normal">
           We believe in the power of non-profits and their essential role in
@@ -66,11 +58,14 @@ const WeSection = () => {
             Hear directly from{" "}
             <span className="text-[#FF8A00]">our community</span>
           </h1>
-          <h2 className="">{" < > "}</h2>
+          <div className="sm:flex sm:gap-2 text-xl font-bold hidden ">
+            <h1 id='preBtn'>{" < "}</h1>
+            <h1 id="nxBtn">{" > "}</h1>
+          </div>
         </div>
-         
-        {/* Cards Carousel */} 
-        <div className="sm:h-[235.34px] mt-3 sm:w-fit w-full flex max-sm:flex-wrap gap-7 border overflow-x-hidden scroll-smooth ">
+
+        {/* Cards Carousel */}
+        <div id="card_cont" className="sm:h-[235.34px] mt-3 sm:w-fit w-full flex max-sm:flex-wrap gap-7 border overflow-x-hidden scroll-smooth ">
           <div className="sm:w-[700.29px] sm:h-full border-5 border-red-500 bg-gradient-to-br from-[#5891B5] to-[#3C6580] rounded-3xl box-border w-full ">
             <div
               id="content"
@@ -86,17 +81,17 @@ const WeSection = () => {
               <p className="sm:mt-3 mt-28">Vinay</p>
               <p>(Donor USA)</p>
             </div>
-            <div className="w-fit h-fit rounded-full sm:border mt-0 z-10 absolute max-md:top-[23rem] max-md:left-[13rem]  border-4  md:left-[37rem] md:top-[56.33px]">
+            <div className="w-fit h-fit rounded-full sm:border mt-0 z-10 absolute xs:bottom-12 sm-md:bottom-12 sm-md:right-[3rem] xs:right-[2.6rem]  border-4  md:left-[37rem] md:top-[56.33px]">
               <img
                 src={vinay}
                 alt=""
-                className="rounded-full max-sm:h-40 max-sm:w-40"
+                className="rounded-full max-sm:h-40 max-sm:w-40 sm-md:w-32 sm-md:h-32 xs:h-32 xs:w-32"
               />
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="sm:ml-32 sm:w-[700.29px] sm:h-full border-5 border-red-500 bg-gradient-to-br from-[#5891B5] to-[#3C6580] rounded-3xl box-border w-full">
+          <div className="sm:ml-32 sm:w-[700.29px] sm:h-full border-5 border-red-500 bg-gradient-to-br from-[#5891B5] to-[#3C6580] rounded-3xl box-border w-full sm:block hidden">
             <div
               id="content"
               className="sm:w-[565px] text-[16px] text-white px-10 py-7 "

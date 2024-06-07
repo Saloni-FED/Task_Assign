@@ -3,6 +3,7 @@ import "./Portal.css";
 import ngo1 from "../../assets/images/ngo.jpeg";
 import sn1 from "../../assets/images/sn.jpg";
 import stCard1 from "../../assets/images/stCard.jpg";
+import ResponsivePortal from "./ResponsivePortal";
 
 const Portal = () => {
   const [stCard, setStCard] = useState(false);
@@ -10,7 +11,8 @@ const Portal = () => {
   const [sn, setSn] = useState(false);
 
   return (
-    <div className="portal w-full flex flex-col justify-center items-center p-8 gap-4">
+    <>
+    <div className="portal w-full sm:flex flex-col justify-center items-center p-8 gap-4 hidden ">
       <h2 className="portalHead">
         {ngo
           ? "Ngo Portal"
@@ -56,6 +58,10 @@ const Portal = () => {
         </button>
       </div>
     </div>
+    <div className="sm:hidden w-full">
+      <ResponsivePortal/>
+    </div>
+    </>
   );
 };
 

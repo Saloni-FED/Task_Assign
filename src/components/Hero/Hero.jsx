@@ -3,9 +3,9 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="flex md:flex-col flex-col-reverse gap-4">
-        <p className="text-[#E1FEFF] md:text-[1.33rem] text-[0.9rem]">
+    <div className="hero sm-md:h-fit sm-md:mt-2 w-full xs:relative overflow-hidden sm_s:pl-20">
+      <div className="flex md:flex-col flex-col-reverse gap-4  xs-leading-none">
+        <p className="text-[#E1FEFF] md:text-[1.33rem] text-[0.9rem] ">
           Take the first step towards transforming your NGO
         </p>
         <h1 className="md:text-[3rem] text-[1.7rem] font-semibold">
